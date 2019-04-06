@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      div p { 
+            border: 1px solid black;
+            margin: 10px;
+      }
+    </style>
+</head>
+<body>
+    <div class="a">
+        <p>a</p>
+    </div>
+    <div class="b">
+        <p>b</p>
+    </div>
+    <script src="./index.js"></script>
+    <script>
+        _.get(".b p").style.background = 'green';
+        _.on(_.get("p"),'click',() => { alert('cliked'); });
+    </script>
+</body>
+</html>
